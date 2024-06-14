@@ -1,0 +1,11 @@
+C:\Users\serge\source\repos\crud\CrudSharedModel\bin\Debug\net8.0\CrudSharedModel.deps.json
+C:\Users\serge\source\repos\crud\CrudSharedModel\bin\Debug\net8.0\CrudSharedModel.dll
+C:\Users\serge\source\repos\crud\CrudSharedModel\bin\Debug\net8.0\CrudSharedModel.pdb
+C:\Users\serge\source\repos\crud\CrudSharedModel\obj\Debug\net8.0\CrudSharedModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\serge\source\repos\crud\CrudSharedModel\obj\Debug\net8.0\CrudSharedModel.AssemblyInfoInputs.cache
+C:\Users\serge\source\repos\crud\CrudSharedModel\obj\Debug\net8.0\CrudSharedModel.AssemblyInfo.cs
+C:\Users\serge\source\repos\crud\CrudSharedModel\obj\Debug\net8.0\CrudSharedModel.csproj.CoreCompileInputs.cache
+C:\Users\serge\source\repos\crud\CrudSharedModel\obj\Debug\net8.0\CrudSharedModel.dll
+C:\Users\serge\source\repos\crud\CrudSharedModel\obj\Debug\net8.0\refint\CrudSharedModel.dll
+C:\Users\serge\source\repos\crud\CrudSharedModel\obj\Debug\net8.0\CrudSharedModel.pdb
+C:\Users\serge\source\repos\crud\CrudSharedModel\obj\Debug\net8.0\ref\CrudSharedModel.dll
