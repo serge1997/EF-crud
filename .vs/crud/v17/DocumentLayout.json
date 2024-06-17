@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\serge\\source\\repos\\crud\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5AB8CC64-1B70-4CF5-8EC0-857A4A96D360}|CrudSharedData\\CrudSharedData.csproj|c:\\users\\serge\\source\\repos\\crud\\crudshareddata\\db\\crudcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AB8CC64-1B70-4CF5-8EC0-857A4A96D360}|CrudSharedData\\CrudSharedData.csproj|solutionrelative:crudshareddata\\db\\crudcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0746C72-9CA1-4467-8B34-04F23C2F90C1}|CrudSharedModel\\CrudSharedModel.csproj|c:\\users\\serge\\source\\repos\\crud\\crudsharedmodel\\models\\generos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0746C72-9CA1-4467-8B34-04F23C2F90C1}|CrudSharedModel\\CrudSharedModel.csproj|solutionrelative:crudsharedmodel\\models\\generos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|c:\\users\\serge\\source\\repos\\crud\\crudapi\\endpoint\\artistextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\endpoint\\artistextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|c:\\users\\serge\\source\\repos\\crud\\crudapi\\response\\artistresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\response\\artistresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|c:\\users\\serge\\source\\repos\\crud\\crudapi\\endpoint\\artistsrequestedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\endpoint\\artistsrequestedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|c:\\users\\serge\\source\\repos\\crud\\crudapi\\crudapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\crudapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|c:\\users\\serge\\source\\repos\\crud\\crudapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,11 +45,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CrudContext.cs",
+              "DocumentMoniker": "C:\\Users\\serge\\source\\repos\\crud\\CrudSharedData\\Db\\CrudContext.cs",
+              "RelativeDocumentMoniker": "CrudSharedData\\Db\\CrudContext.cs",
+              "ToolTip": "C:\\Users\\serge\\source\\repos\\crud\\CrudSharedData\\Db\\CrudContext.cs",
+              "RelativeToolTip": "CrudSharedData\\Db\\CrudContext.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwAsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T02:05:34.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Generos.cs",
+              "DocumentMoniker": "C:\\Users\\serge\\source\\repos\\crud\\CrudSharedModel\\Models\\Generos.cs",
+              "RelativeDocumentMoniker": "CrudSharedModel\\Models\\Generos.cs",
+              "ToolTip": "C:\\Users\\serge\\source\\repos\\crud\\CrudSharedModel\\Models\\Generos.cs",
+              "RelativeToolTip": "CrudSharedModel\\Models\\Generos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T02:01:00.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ArtistResponse.cs",
               "DocumentMoniker": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\Response\\ArtistResponse.cs",
               "RelativeDocumentMoniker": "CrudApi\\Response\\ArtistResponse.cs",
@@ -57,34 +83,7 @@
               "RelativeToolTip": "CrudApi\\Response\\ArtistResponse.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T01:07:16.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CrudApi",
-              "DocumentMoniker": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\CrudApi.csproj",
-              "RelativeDocumentMoniker": "CrudApi\\CrudApi.csproj",
-              "ToolTip": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\CrudApi.csproj",
-              "RelativeToolTip": "CrudApi\\CrudApi.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-17T01:06:19.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ArtistsRequestEdit.cs",
-              "DocumentMoniker": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\Endpoint\\ArtistsRequestEdit.cs",
-              "RelativeDocumentMoniker": "CrudApi\\Endpoint\\ArtistsRequestEdit.cs",
-              "ToolTip": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\Endpoint\\ArtistsRequestEdit.cs",
-              "RelativeToolTip": "CrudApi\\Endpoint\\ArtistsRequestEdit.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T01:57:07.71Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-17T01:07:16.933Z"
             },
             {
               "$type": "Document",
@@ -96,18 +95,17 @@
               "RelativeToolTip": "CrudApi\\Requests\\ArtistRequest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T01:38:49.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-14T01:38:49.86Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ArtistExtension.cs",
               "DocumentMoniker": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\Endpoint\\ArtistExtension.cs",
               "RelativeDocumentMoniker": "CrudApi\\Endpoint\\ArtistExtension.cs",
               "ToolTip": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\Endpoint\\ArtistExtension.cs",
               "RelativeToolTip": "CrudApi\\Endpoint\\ArtistExtension.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAAAEoAAABCAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAAEoAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-14T00:42:15.139Z",
               "EditorCaption": ""
@@ -131,8 +129,7 @@
               "RelativeToolTip": "CrudApi\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T20:26:12.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T20:26:12.234Z"
             },
             {
               "$type": "Document",

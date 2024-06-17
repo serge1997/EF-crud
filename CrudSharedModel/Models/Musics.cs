@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using CrudSharedModel.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace Crud.Models;
 
@@ -13,6 +14,7 @@ public class Musics
     public int Id { get; }
 
     public int ArtistsId { get; set; }
+    public ICollection<Generos> Generos { get; set; }
 
     public Musics(string artist, string title, string outYear, int ArtistsId)
     {

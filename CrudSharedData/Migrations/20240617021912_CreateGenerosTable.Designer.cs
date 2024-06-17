@@ -3,6 +3,7 @@ using Crud.Db;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Crud.Migrations
 {
     [DbContext(typeof(CrudContext))]
-    partial class CrudContextModelSnapshot : ModelSnapshot
+    [Migration("20240617021912_CreateGenerosTable")]
+    partial class CreateGenerosTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -100,41 +103,11 @@ namespace Crud.Migrations
                     b.ToTable("Generos");
                 });
 
-            modelBuilder.Entity("GenerosMusics", b =>
-                {
-                    b.Property<int>("GenerosId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("MusicsId")
-                        .HasColumnType("int");
-
-                    b.HasKey("GenerosId", "MusicsId");
-
-                    b.HasIndex("MusicsId");
-
-                    b.ToTable("GenerosMusics");
-                });
-
             modelBuilder.Entity("Crud.Models.Musics", b =>
                 {
                     b.HasOne("Crud.Models.Artists", null)
                         .WithMany("Music")
                         .HasForeignKey("ArtistsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("GenerosMusics", b =>
-                {
-                    b.HasOne("CrudSharedModel.Models.Generos", null)
-                        .WithMany()
-                        .HasForeignKey("GenerosId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Crud.Models.Musics", null)
-                        .WithMany()
-                        .HasForeignKey("MusicsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
