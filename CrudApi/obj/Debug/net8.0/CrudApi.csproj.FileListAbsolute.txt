@@ -74,3 +74,4 @@ C:\Users\serge\source\repos\crud\CrudApi\bin\Debug\net8.0\Swashbuckle.AspNetCore
 C:\Users\serge\source\repos\crud\CrudApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\serge\source\repos\crud\CrudApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\serge\source\repos\crud\CrudApi\obj\Debug\net8.0\CrudApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\serge\source\repos\crud\CrudApi\obj\Debug\net8.0\CrudApi.sourcelink.json

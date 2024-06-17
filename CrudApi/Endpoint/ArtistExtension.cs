@@ -5,6 +5,8 @@ using Crud.Db;
 using Crud.Models;
 using Microsoft.AspNetCore.Mvc;
 using CrudApi.Requests;
+using CrudApi.Response;
+using System.Runtime.CompilerServices;
 
 public static class ArtistExtension
 {
@@ -13,7 +15,8 @@ public static class ArtistExtension
     {
         app.MapGet("/", ([FromServices] Generics<Artists> artist) =>
         {
-            return Results.Ok(artist.ListAll());
+            var listOfARtist = EntityListToResponse(artist.ListAll());
+            return Results.Ok(listOfARtist);
         });
 
         app.MapGet("/artista/{nome}", (string nome) =>
@@ -62,5 +65,15 @@ public static class ArtistExtension
             return Results.NotFound($"O registro {artistsRequestEdit.Id} não existe ");
         });
 
+    }
+
+    private static ICollection<ArtistResponse> EntityListToResponse(IEnumerable<Artists> listArtist)
+    {
+        return listArtist.Select(art => EntityToResponse(art)).ToList();
+    }
+
+    private static ArtistResponse EntityToResponse(Artists artist)
+    {
+        return new ArtistResponse(artist.Id, artist.Name, artist.Bio, artist.Picture!);
     }
 }

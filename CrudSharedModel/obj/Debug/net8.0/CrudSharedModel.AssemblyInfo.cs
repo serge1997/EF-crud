@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CrudSharedModel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4777cbb27465512424c0127413353a2ce2e69bdc")]
 [assembly: System.Reflection.AssemblyProductAttribute("CrudSharedModel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CrudSharedModel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
