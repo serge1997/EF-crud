@@ -3,50 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\serge\\source\\repos\\crud\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|c:\\users\\serge\\source\\repos\\crud\\crudapi\\endpoint\\musicextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\endpoint\\musicextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FEF9285-80FB-4E09-9769-F1EB832D3C48}|CrudWeb\\CrudWeb.csproj|c:\\users\\serge\\source\\repos\\crud\\crudweb\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FEF9285-80FB-4E09-9769-F1EB832D3C48}|CrudWeb\\CrudWeb.csproj|solutionrelative:crudweb\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5AB8CC64-1B70-4CF5-8EC0-857A4A96D360}|CrudSharedData\\CrudSharedData.csproj|c:\\users\\serge\\source\\repos\\crud\\crudshareddata\\db\\crudcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5AB8CC64-1B70-4CF5-8EC0-857A4A96D360}|CrudSharedData\\CrudSharedData.csproj|solutionrelative:crudshareddata\\db\\crudcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FEF9285-80FB-4E09-9769-F1EB832D3C48}|CrudWeb\\CrudWeb.csproj|c:\\users\\serge\\source\\repos\\crud\\crudweb\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FEF9285-80FB-4E09-9769-F1EB832D3C48}|CrudWeb\\CrudWeb.csproj|solutionrelative:crudweb\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|c:\\users\\serge\\source\\repos\\crud\\crudapi\\requests\\musicrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\requests\\musicrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0746C72-9CA1-4467-8B34-04F23C2F90C1}|CrudSharedModel\\CrudSharedModel.csproj|c:\\users\\serge\\source\\repos\\crud\\crudsharedmodel\\models\\musics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0746C72-9CA1-4467-8B34-04F23C2F90C1}|CrudSharedModel\\CrudSharedModel.csproj|solutionrelative:crudsharedmodel\\models\\musics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|c:\\users\\serge\\source\\repos\\crud\\crudapi\\requests\\generorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\requests\\generorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/soundsNew/True/SqlTable/dbo.Generos.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0746C72-9CA1-4467-8B34-04F23C2F90C1}|CrudSharedModel\\CrudSharedModel.csproj|c:\\users\\serge\\source\\repos\\crud\\crudsharedmodel\\models\\generos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0746C72-9CA1-4467-8B34-04F23C2F90C1}|CrudSharedModel\\CrudSharedModel.csproj|solutionrelative:crudsharedmodel\\models\\generos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|c:\\users\\serge\\source\\repos\\crud\\crudapi\\endpoint\\artistextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\endpoint\\artistextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|c:\\users\\serge\\source\\repos\\crud\\crudapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|c:\\users\\serge\\source\\repos\\crud\\crudapi\\response\\artistresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\response\\artistresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|c:\\users\\serge\\source\\repos\\crud\\crudapi\\requests\\artistrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72DD2FC1-9A0C-45FD-8326-6B35BEFF35CC}|CrudApi\\CrudApi.csproj|solutionrelative:crudapi\\requests\\artistrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/soundsNew/True/SqlTable/dbo.Artists.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{1FEF9285-80FB-4E09-9769-F1EB832D3C48}|CrudWeb\\CrudWeb.csproj|c:\\users\\serge\\source\\repos\\crud\\crudweb\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1FEF9285-80FB-4E09-9769-F1EB832D3C48}|CrudWeb\\CrudWeb.csproj|solutionrelative:crudweb\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -56,156 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "dbo.Generos [Dados]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/soundsNew/True/SqlTable/dbo.Generos.sql",
-              "ToolTip": "dbo.Generos [Dados]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-06-18T02:03:19.427Z",
+              "DocumentIndex": 0,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\serge\\source\\repos\\crud\\CrudWeb\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "CrudWeb\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\serge\\source\\repos\\crud\\CrudWeb\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "CrudWeb\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T00:08:00.134Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CrudContext.cs",
-              "DocumentMoniker": "C:\\Users\\serge\\source\\repos\\crud\\CrudSharedData\\Db\\CrudContext.cs",
-              "RelativeDocumentMoniker": "CrudSharedData\\Db\\CrudContext.cs",
-              "ToolTip": "C:\\Users\\serge\\source\\repos\\crud\\CrudSharedData\\Db\\CrudContext.cs",
-              "RelativeToolTip": "CrudSharedData\\Db\\CrudContext.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAQwAsAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T02:01:22.458Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MusicExtension.cs",
-              "DocumentMoniker": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\Endpoint\\MusicExtension.cs",
-              "RelativeDocumentMoniker": "CrudApi\\Endpoint\\MusicExtension.cs",
-              "ToolTip": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\Endpoint\\MusicExtension.cs",
-              "RelativeToolTip": "CrudApi\\Endpoint\\MusicExtension.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T00:23:41.427Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Generos.cs",
-              "DocumentMoniker": "C:\\Users\\serge\\source\\repos\\crud\\CrudSharedModel\\Models\\Generos.cs",
-              "RelativeDocumentMoniker": "CrudSharedModel\\Models\\Generos.cs",
-              "ToolTip": "C:\\Users\\serge\\source\\repos\\crud\\CrudSharedModel\\Models\\Generos.cs",
-              "RelativeToolTip": "CrudSharedModel\\Models\\Generos.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T02:01:00.285Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ArtistExtension.cs",
-              "DocumentMoniker": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\Endpoint\\ArtistExtension.cs",
-              "RelativeDocumentMoniker": "CrudApi\\Endpoint\\ArtistExtension.cs",
-              "ToolTip": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\Endpoint\\ArtistExtension.cs",
-              "RelativeToolTip": "CrudApi\\Endpoint\\ArtistExtension.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T00:42:15.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GeneroRequest.cs",
-              "DocumentMoniker": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\Requests\\GeneroRequest.cs",
-              "RelativeDocumentMoniker": "CrudApi\\Requests\\GeneroRequest.cs",
-              "ToolTip": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\Requests\\GeneroRequest.cs",
-              "RelativeToolTip": "CrudApi\\Requests\\GeneroRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T00:20:51.713Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Musics.cs",
-              "DocumentMoniker": "C:\\Users\\serge\\source\\repos\\crud\\CrudSharedModel\\Models\\Musics.cs",
-              "RelativeDocumentMoniker": "CrudSharedModel\\Models\\Musics.cs",
-              "ToolTip": "C:\\Users\\serge\\source\\repos\\crud\\CrudSharedModel\\Models\\Musics.cs",
-              "RelativeToolTip": "CrudSharedModel\\Models\\Musics.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBAAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T20:00:54.668Z",
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\serge\\source\\repos\\crud\\CrudWeb\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "CrudWeb\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\serge\\source\\repos\\crud\\CrudWeb\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "CrudWeb\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T00:06:49.093Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MusicRequest.cs",
-              "DocumentMoniker": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\Requests\\MusicRequest.cs",
-              "RelativeDocumentMoniker": "CrudApi\\Requests\\MusicRequest.cs",
-              "ToolTip": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\Requests\\MusicRequest.cs",
-              "RelativeToolTip": "CrudApi\\Requests\\MusicRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAB2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T00:18:18.388Z",
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\serge\\source\\repos\\crud\\CrudWeb\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "CrudWeb\\wwwroot\\css\\app.css",
+              "ToolTip": "C:\\Users\\serge\\source\\repos\\crud\\CrudWeb\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "CrudWeb\\wwwroot\\css\\app.css",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-21T00:06:38.296Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ArtistResponse.cs",
-              "DocumentMoniker": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\Response\\ArtistResponse.cs",
-              "RelativeDocumentMoniker": "CrudApi\\Response\\ArtistResponse.cs",
-              "ToolTip": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\Response\\ArtistResponse.cs",
-              "RelativeToolTip": "CrudApi\\Response\\ArtistResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T01:07:16.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\Program.cs",
-              "RelativeDocumentMoniker": "CrudApi\\Program.cs",
-              "ToolTip": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\Program.cs",
-              "RelativeToolTip": "CrudApi\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T20:26:12.234Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ArtistRequest.cs",
-              "DocumentMoniker": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\Requests\\ArtistRequest.cs",
-              "RelativeDocumentMoniker": "CrudApi\\Requests\\ArtistRequest.cs",
-              "ToolTip": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\Requests\\ArtistRequest.cs",
-              "RelativeToolTip": "CrudApi\\Requests\\ArtistRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T01:38:49.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "dbo.Artists [Dados]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/soundsNew/True/SqlTable/dbo.Artists.sql",
-              "ToolTip": "dbo.Artists [Dados]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-06-13T01:17:22.017Z"
             }
           ]
         }

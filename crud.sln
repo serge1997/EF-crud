@@ -14,7 +14,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrudApi", "CrudApi\CrudApi.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrudSharedModel", "CrudSharedModel\CrudSharedModel.csproj", "{E0746C72-9CA1-4467-8B34-04F23C2F90C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudSharedData", "CrudSharedData\CrudSharedData.csproj", "{5AB8CC64-1B70-4CF5-8EC0-857A4A96D360}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrudSharedData", "CrudSharedData\CrudSharedData.csproj", "{5AB8CC64-1B70-4CF5-8EC0-857A4A96D360}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudWeb", "CrudWeb\CrudWeb.csproj", "{1FEF9285-80FB-4E09-9769-F1EB832D3C48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,10 @@ Global
 		{5AB8CC64-1B70-4CF5-8EC0-857A4A96D360}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AB8CC64-1B70-4CF5-8EC0-857A4A96D360}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AB8CC64-1B70-4CF5-8EC0-857A4A96D360}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FEF9285-80FB-4E09-9769-F1EB832D3C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FEF9285-80FB-4E09-9769-F1EB832D3C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FEF9285-80FB-4E09-9769-F1EB832D3C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FEF9285-80FB-4E09-9769-F1EB832D3C48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
