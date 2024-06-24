@@ -11,6 +11,18 @@ builder.Services.AddTransient<Generics<Artists>>();
 builder.Services.AddTransient<Generics<Musics>>();
 builder.Services.AddTransient<Generics<Generos>>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowOrigin", policy =>
+    {
+        policy.WithOrigins("https://localhost:7194")
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
+builder.Services.AddControllers();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -21,6 +33,15 @@ app.AddEndPointMusic();
 
 app.UseSwagger();
 app.UseSwaggerUI();
-// /swagger/index.html
+
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
+
+
+app.UseCors("AllowOrigin");
+app.UseAuthorization();
+app.MapControllers();
 
 app.Run();

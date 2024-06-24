@@ -13,7 +13,7 @@ public static class ArtistExtension
 
     public static void AddEndPointArtistas(this WebApplication app)
     {
-        app.MapGet("/", ([FromServices] Generics<Artists> artist) =>
+        app.MapGet("/artists", ([FromServices] Generics<Artists> artist) =>
         {
             var listOfARtist = EntityListToResponse(artist.ListAll());
             return Results.Ok(listOfARtist);

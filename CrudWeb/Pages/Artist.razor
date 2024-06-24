@@ -1,0 +1,37 @@
+﻿@page "/artist"
+
+@inject HttpClient http
+@inject ArtistApi artistApi
+
+<PageTitle>Artist</PageTitle>
+
+
+<h3>Artist</h3>
+
+
+@if (artistas is not null)
+{
+    <ul class="list-group">
+        @foreach (var result in artistas)
+         {
+            <li class="list-group-item">@result.Nome</li>
+         }
+    </ul>
+}
+
+
+@code {
+    private ICollection<ArtistResponse>? artistas;
+ 
+
+    protected override async Task OnInitializedAsync()
+    {
+        artistas = await artistApi.GetArtistApiAsync();
+    }
+
+    public class Artists
+    {
+        public string Nome {get; set;}
+        public string Bio {get; set;}
+    }
+}

@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\CrudWeb.styles.css"
     },
     {
+      "Id": "C:\\Users\\serge\\source\\repos\\crud\\CrudWeb\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
       "Id": "C:\\Users\\serge\\source\\repos\\crud\\CrudWeb\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
@@ -31,6 +35,10 @@
     {
       "Id": "C:\\Users\\serge\\source\\repos\\crud\\CrudWeb\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\serge\\source\\repos\\crud\\CrudWeb\\wwwroot\\images\\logo.jpg",
+      "PackagePath": "staticwebassets\\images\\logo.jpg"
     },
     {
       "Id": "C:\\Users\\serge\\source\\repos\\crud\\CrudWeb\\wwwroot\\index.html",
