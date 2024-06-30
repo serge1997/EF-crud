@@ -1,0 +1,20 @@
+﻿<MudCard>
+    <MudCardMedia Image="images/logo.jpg" Height="120"></MudCardMedia>
+    <MudCardHeader>
+        <MudCardHeader>
+            <MudText Typo="Typo.h6">@Artist?.Nome</MudText>
+        </MudCardHeader>
+    </MudCardHeader>
+    <MudCardContent>
+        <MudText>Story of the day</MudText>
+        <MudText Typo="Typo.body2">@Artist?.Bio</MudText>
+    </MudCardContent>
+    <MudCardActions>
+        <MudButton Variant="Variant.Text" Color="Color.Primary">Learn More</MudButton>
+    </MudCardActions>
+</MudCard>
+
+@code {
+    [Parameter]
+    public ArtistResponse? Artist { get; set; }
+}

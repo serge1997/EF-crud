@@ -1,5 +1,6 @@
 ﻿using CrudWeb.Response;
 using System.Net.Http.Json;
+using CrudWeb.Requests;
 
 namespace CrudWeb.Services;
 
@@ -16,5 +17,10 @@ public class ArtistApi
     {
         return await
             _httpClient.GetFromJsonAsync<ICollection<ArtistResponse>>("artists");
+    }
+
+    public async Task CreateArtistAsync(ArtistRequest artistRequest)
+    {
+        await _httpClient.PostAsJsonAsync("artist", artistRequest);
     }
 }

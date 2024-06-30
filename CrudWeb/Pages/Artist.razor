@@ -1,23 +1,23 @@
 ﻿@page "/artist"
-
 @inject HttpClient http
 @inject ArtistApi artistApi
 
 <PageTitle>Artist</PageTitle>
 
+<h3>Artists</h3>
+<MudGrid Spacing="4" Justify="Justify.Center">
+   @if(artistas is not null){
+     @foreach(var result in artistas){
+         <MudItem>
+            <MudPaper Width="350px">
+                <ArtistCard Artist="result" />
+            </MudPaper>
+         </MudItem>
+     }
+   }
+</MudGrid>
 
-<h3>Artist</h3>
 
-
-@if (artistas is not null)
-{
-    <ul class="list-group">
-        @foreach (var result in artistas)
-         {
-            <li class="list-group-item">@result.Nome</li>
-         }
-    </ul>
-}
 
 
 @code {
@@ -29,9 +29,4 @@
         artistas = await artistApi.GetArtistApiAsync();
     }
 
-    public class Artists
-    {
-        public string Nome {get; set;}
-        public string Bio {get; set;}
-    }
 }

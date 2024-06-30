@@ -1,11 +1,51 @@
 ﻿@page "/create-artist"
+@inject ArtistApi ArtistApi
+@inject NavigationManager navigatorManager
 
 
-<h3>Create Artist</h3>
-<div class="container">
-    <input type="text" class="form-control" placeholder="Artist name" />
-</div>
+<MudPaper Class="px-8 pt-2 pb-4 mx-12 my-8" Justify="Justify.Center">
+    <MudText Class="mt-8" Typo="Typo.h4">Create Artist</MudText>
+
+    <MudForm>
+        <MudTextField Class="mt-4" T="string" Placeholder="Artist name" 
+            Variant="Variant.Outlined"
+            @bind-Value="nome"
+            Required="true"
+            RequiredError="Field required"
+         />
+
+
+        <MudTextField Class="mt-4" T="string" Placeholder="Artist Bio"
+            Variant="Variant.Outlined"
+            @bind-Value="bio"
+            Required="true"
+            Lines="4"
+            RequiredError="Field required"
+        />
+
+        <div class="d-flex align-center justify-space-between mt-4">
+            <MudButton 
+                Variant="Variant.Filled"
+                @onclick="OnCreate"
+                Color="Color.Primary"
+                Class="ml-auto">
+                Save
+            </MudButton>
+        </div>
+    </MudForm>
+</MudPaper>
+
 
 @code {
+    private string? nome;
+    private string? bio;
+
+
+    private async Task OnCreate()
+    {
+        var request = new ArtistRequest(nome!, bio!);
+        await ArtistApi.CreateArtistAsync(request);
+        navigatorManager.NavigateTo("/artist");
+    }
 
 }
