@@ -5,7 +5,13 @@
 
 <MudPaper Class="px-8 pt-2 pb-4 mx-12 my-8" Justify="Justify.Center">
     <MudText Class="mt-8" Typo="Typo.h4">Create Artist</MudText>
-
+    <MudButton 
+        @onclick="BackToList"
+        Class="mt-3" 
+        Variant="Variant.Outlined" 
+        Color="Color.Primary">
+        Go back to list 
+    </MudButton>
     <MudForm>
         <MudTextField Class="mt-4" T="string" Placeholder="Artist name" 
             Variant="Variant.Outlined"
@@ -45,6 +51,11 @@
     {
         var request = new ArtistRequest(nome!, bio!);
         await ArtistApi.CreateArtistAsync(request);
+        navigatorManager.NavigateTo("/artist");
+    }
+
+    private void BackToList()
+    {
         navigatorManager.NavigateTo("/artist");
     }
 

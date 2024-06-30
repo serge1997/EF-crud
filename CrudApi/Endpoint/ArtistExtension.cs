@@ -19,22 +19,22 @@ public static class ArtistExtension
             return Results.Ok(listOfARtist);
         });
 
-        app.MapGet("/artista/{nome}", (string nome) =>
+        app.MapGet("/artist/{name}", (string name) =>
         {
             var dalName = new Generics<Artists>(new CrudContext());
-            var artist = dalName.GetBy(art => art.Name.Equals(nome))!;
+            var artist = dalName.GetBy(art => art.Name.Equals(name))!;
 
             if (artist is not null)
             {
-                return Results.Ok(artist);
+                return Results.Ok(new ArtistResponse(artist.Id, artist.Name, artist.Bio, artist.Picture!));
             };
-            return Results.NotFound($"Artist {nome} doesn't exist");
+            return Results.NotFound($"Artist {name} doesn't exist");
         });
 
         app.MapPost("/artist", ([FromServices] Generics<Artists> ArtistDal ,[FromBody] ArtistRequest artistRequest) =>
         {
 
-            var ArtistNew = new Artists(artistRequest.nome, artistRequest.bio);
+            var ArtistNew = new Artists(artistRequest.Name, artistRequest.Bio);
             ArtistDal.OnCreate(ArtistNew);
             return Results.Ok(ArtistDal);
 
@@ -57,8 +57,8 @@ public static class ArtistExtension
             var artistToUpdate = artist.GetBy(artist => artist.Id == artistsRequestEdit.Id);
             if (artistToUpdate is not null)
             {
-                artistToUpdate.Bio = artistsRequestEdit.bio;
-                artistToUpdate.Name = artistsRequestEdit.nome;
+                artistToUpdate.Bio = artistsRequestEdit.Bio;
+                artistToUpdate.Name = artistsRequestEdit.Name;
                 artist.OnUpdate(artistToUpdate);
                 return Results.Ok($"{artistToUpdate.Name} foi atualizado com successo");
             }

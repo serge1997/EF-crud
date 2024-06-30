@@ -1,0 +1,85 @@
+﻿@page "/edit-artist/{ArtistName}"
+@inject ArtistApi ArtistApi
+@inject NavigationManager NavigationManager
+@inject HttpClient Http
+
+<MudPaper Class="px-8 pt-2 pb-4 mx-12 my-8" Justify="Justify.Center">
+    <MudText Class="mt-8" Typo="Typo.h4">Update Artist</MudText>
+    <MudButton @onclick="BackToList"
+               Class="mt-3"
+               Variant="Variant.Outlined"
+               Color="Color.Primary">
+        Go back to list
+    </MudButton>
+    <MudForm>
+        @if (Artist is not null)
+        {
+            <MudTextField Class
+            ="mt-4" T="string" Placeholder
+            ="Artist name"
+            Variant="Variant.Outlined"
+            @bind-Value="nome"
+            Required="true"
+            RequiredError="Field required" 
+            />
+
+
+            <MudTextField Class="mt-4" T="string" Placeholder="Artist Bio"
+            Variant="Variant.Outlined"
+            @bind-Value="bio"
+            Required="true"
+            Lines="4"
+            RequiredError="Field required" 
+            />
+
+            <div class="d-flex justify-content-end gap-2 mt-4">
+                <MudButton Variant="Variant.Filled"
+                    @onclick="OnUpdate"
+                    Color="Color.Primary"
+                   >
+                    Atualizar
+                </MudButton>
+                <MudButton Variant="Variant.Filled"
+                     @onclick="OnDelete"
+                     Color="Color.Error"
+                     >
+                    Deletear
+                </MudButton>
+            </div>
+        }
+    </MudForm>
+</MudPaper>
+
+
+@code {
+    private string? nome;
+    private string? bio;
+    [Parameter]
+    public string? ArtistName { get; set; } = "Lourena";
+    public ArtistResponse? Artist { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Artist = await ArtistApi.GetArtistByNameAsync(ArtistName!);
+        nome = Artist?.Name;
+        bio = Artist?.Bio;
+    }
+
+    private async Task OnUpdate()
+    {
+        var update = new ArtistsRequestEdit(Artist!.Id, nome!, bio!);
+        await ArtistApi.UpdateArtistAsync(update);
+        NavigationManager.NavigateTo("/artist");
+    }
+
+    private async Task OnDelete()
+    {
+        await ArtistApi.DeleteArtistAsync(Artist!.Id);
+        NavigationManager.NavigateTo("/artist");
+    }
+
+    private void BackToList()
+    {
+        NavigationManager.NavigateTo("/artist");
+    }
+}
