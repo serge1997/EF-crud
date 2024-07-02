@@ -1,0 +1,37 @@
+﻿@page "/create-music"
+
+@inject ArtistApi ArtistApi
+
+<h3>CreateMusic</h3>
+
+<MudPaper Class="px-8 pt-2 pb-4 mx-12 my-8" Justify="Justify.Center">
+    <MudForm>
+        <MudSelect T="int" Variant="Variant.Outlined" Placeholder="Select artist" Class="mb-4" MultiSelection="true">
+            @if(Artists is not null)
+            {
+                @foreach(var artist in Artists)
+                {
+                    <MudSelectItem Value="@(artist.Id)">@artist.Name</MudSelectItem>
+                }
+            }
+        </MudSelect>
+        <MudTextField
+            T="string"
+            Required="true"
+            Variant="Variant.Outlined"
+            RequiredError="Filed is required"
+            Class="mb-3"
+            Placeholder="Music title" 
+        />
+    </MudForm>
+</MudPaper>
+
+@code {
+    private ICollection<ArtistResponse>? Artists;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        Artists = await ArtistApi.GetArtistApiAsync();
+    }
+}

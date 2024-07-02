@@ -30,6 +30,7 @@ var app = builder.Build();
 
 app.AddEndPointArtistas();
 app.AddEndPointMusic();
+app.AddEndPointGenero();
 
 app.UseSwagger();
 app.UseSwaggerUI();

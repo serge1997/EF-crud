@@ -7,9 +7,16 @@
 <div class="container mt-5">
     <h3>Artists</h3>
 </div>
+<MudStack Class="mb-4 mt-4" Row="true" Justify="Justify.SpaceBetween">
+    <MudText Class="mb-4" Typo="Typo.h4">List of artist</MudText>
+    <MudPagination Count="@TotalPage" SelectedChanged="OnNextPage" />
+
+</MudStack>
 <MudGrid Spacing="4" Justify="Justify.Center">
-   @if(artistas is not null){
-     @foreach(var result in artistas){
+    @if (artistPerPage is not null)
+    {
+        @foreach (var result in artistPerPage)
+        {
          <MudItem>
             <MudPaper Width="350px">
                 <ArtistCard Artist="result" />
@@ -24,11 +31,30 @@
 
 @code {
     private ICollection<ArtistResponse>? artistas;
- 
+    private int ItemsSize = 2;
+    private int TotalItems;
+    private int TotalPage;
+    private ICollection<ArtistResponse>? artistPerPage;
+
 
     protected override async Task OnInitializedAsync()
     {
         artistas = await artistApi.GetArtistApiAsync();
+        if (artistas is not null)
+        {
+            artistas = artistas.OrderByDescending(art => art.Id).ToList();
+            TotalItems = artistas.Count();
+            TotalPage = Convert.ToInt32(Math.Ceiling(TotalItems * 1.0) / ItemsSize);
+            this.OnNextPage(1);
+        }
+    }
+
+    private void OnNextPage(int pageNumber)
+    {
+        var indice = pageNumber - 1;
+        artistPerPage = artistas?.Skip(ItemsSize * indice)
+            .Take(ItemsSize)
+            .ToList();
     }
 
 }
