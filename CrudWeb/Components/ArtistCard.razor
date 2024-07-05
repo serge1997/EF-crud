@@ -1,5 +1,5 @@
 ﻿<MudCard>
-    <MudCardMedia Image="images/logo.jpg" Height="120"></MudCardMedia>
+    <MudCardMedia Image=@($"{profilPicture}{Artist!.Picture}") Height="120"></MudCardMedia>
     <MudCardHeader>
         <MudCardHeader>
             <MudText Typo="Typo.h6">@Artist!.Name</MudText>
@@ -22,4 +22,10 @@
 @code {
     [Parameter]
     public ArtistResponse? Artist { get; set; }
+    public string? profilPicture { get; set; } = "https://localhost:7248/";
+
+    protected override void OnInitialized()
+    {
+        //profilPicture = Artist!.Picture!.Contains("PictureArtist") ? $"https://localhost:7248/{Artist!.Picture}" : "images/logo.jpg";
+    }
 }

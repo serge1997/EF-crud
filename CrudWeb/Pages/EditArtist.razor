@@ -54,6 +54,7 @@
 @code {
     private string? nome;
     private string? bio;
+    private string? picture;
     [Parameter]
     public string? ArtistName { get; set; } = "Lourena";
     public ArtistResponse? Artist { get; set; }
@@ -67,7 +68,7 @@
 
     private async Task OnUpdate()
     {
-        var update = new ArtistsRequestEdit(Artist!.Id, nome!, bio!);
+        var update = new ArtistsRequestEdit(Artist!.Id, nome!, bio!, picture);
         await ArtistApi.UpdateArtistAsync(update);
         NavigationManager.NavigateTo("/artist");
     }

@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\wwwroot\\PictureArtist\\030720240311.Teste.jpeg",
+      "PackagePath": "staticwebassets\\PictureArtist\\030720240311.Teste.jpeg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CrudApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CrudApi.props",
+      "PackagePath": "build\\CrudApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CrudApi.props",
+      "PackagePath": "buildMultiTargeting\\CrudApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CrudApi.props",
+      "PackagePath": "buildTransitive\\CrudApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

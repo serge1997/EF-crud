@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using CrudApi.Requests;
 using CrudApi.Response;
 using System.Runtime.CompilerServices;
+using Microsoft.VisualBasic;
 
 public static class ArtistExtension
 {
@@ -31,10 +32,21 @@ public static class ArtistExtension
             return Results.NotFound($"Artist {name} doesn't exist");
         });
 
-        app.MapPost("/artist", ([FromServices] Generics<Artists> ArtistDal ,[FromBody] ArtistRequest artistRequest) =>
+        app.MapPost("/artist", async ([FromServices] IHostEnvironment env, [FromServices] Generics<Artists> ArtistDal, [FromBody] ArtistRequest artistRequest) =>
         {
 
-            var ArtistNew = new Artists(artistRequest.Name, artistRequest.Bio);
+            var name = artistRequest.Name.Trim();
+            var pictureName = DateTime.Now.ToString("ddMMyyyyhhss") + "." + name + ".jpeg";
+            var path = Path.Combine(env.ContentRootPath, "wwwroot", "PictureArtist", pictureName);
+
+            using MemoryStream stream = new MemoryStream(Convert.FromBase64String(artistRequest.Picture!));
+            using FileStream fs = new(path, FileMode.Create);
+            await stream.CopyToAsync(fs);
+
+            var ArtistNew = new Artists(artistRequest.Name, artistRequest.Bio)
+            {
+                Picture = $"/PictureArtist/{pictureName}"
+            };
             ArtistDal.OnCreate(ArtistNew);
             return Results.Ok(ArtistDal);
 

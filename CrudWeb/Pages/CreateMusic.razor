@@ -1,20 +1,23 @@
 ﻿@page "/create-music"
 
 @inject ArtistApi ArtistApi
+@inject GeneroApi GeneroApi
 
 <h3>CreateMusic</h3>
 
 <MudPaper Class="px-8 pt-2 pb-4 mx-12 my-8" Justify="Justify.Center">
     <MudForm>
-        <MudSelect T="int" Variant="Variant.Outlined" Placeholder="Select artist" Class="mb-4" MultiSelection="true">
+        <MudSelect T="ArtistResponse" Variant="Variant.Outlined" Placeholder="Select artist" Class="mb-4" ValueChanged="OnSelectedArtist">
             @if(Artists is not null)
             {
                 @foreach(var artist in Artists)
                 {
-                    <MudSelectItem Value="@(artist.Id)">@artist.Name</MudSelectItem>
+                    <MudSelectItem Value="artist" />
                 }
             }
         </MudSelect>
+
+
         <MudTextField
             T="string"
             Required="true"
@@ -23,15 +26,55 @@
             Class="mb-3"
             Placeholder="Music title" 
         />
+
+        <MudSelect Variant="Variant.Outlined" T="GeneroResponse" Placeholder="Select Genre" Class="mb-4" MultiSelection="true" ValueChanged="OnSelectedGenero" Label="Genero">
+            @if (Generos is not null)
+            {
+                @foreach (var genre in Generos)
+                {
+                    <MudSelectItem Value="genre"/>
+                }
+
+                @if(GeneroSelected is not null)
+                {
+                    @foreach(var item in GeneroSelected)
+                    {
+                        <MudAlert Severity="Severity.Info">@(item.Name) added</MudAlert>
+                    }
+                }
+            }
+        </MudSelect>
+        <MudButton 
+            Class="mt-3"
+            Color="Color.Primary"
+            Variant="Variant.Filled"
+        >
+            Create musics
+        </MudButton>
     </MudForm>
 </MudPaper>
 
 @code {
     private ICollection<ArtistResponse>? Artists;
+    private ICollection<GeneroResponse>? Generos;
+
+    private List<GeneroResponse>? GeneroSelected { get; set; }
+    private ArtistResponse? ArtistSelected { get; set; }
 
 
     protected override async Task OnInitializedAsync()
     {
         Artists = await ArtistApi.GetArtistApiAsync();
+        Generos = await GeneroApi.GetGenerosAsync();
+    }
+
+    private void OnSelectedArtist(ArtistResponse artist)
+    {
+        ArtistSelected = artist;
+    }
+
+    private void OnSelectedGenero(GeneroResponse genero)
+    {
+        GeneroSelected?.Add(genero);
     }
 }

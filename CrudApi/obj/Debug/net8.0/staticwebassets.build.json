@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "k2Xh3oVE2Qun2CnOdz7oOB/1M+eEaWHps3rBfbkE1Io=",
+  "Hash": "N9j9PF9Q5KWRmXFeDiRtpiclfmgyMx9F6/Uz7wtTW7g=",
   "Source": "CrudApi",
   "BasePath": "_content/CrudApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "CrudApi\\wwwroot",
+      "Source": "CrudApi",
+      "ContentRoot": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\wwwroot\\",
+      "BasePath": "_content/CrudApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\wwwroot\\PictureArtist\\030720240311.Teste.jpeg",
+      "SourceId": "CrudApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\wwwroot\\",
+      "BasePath": "_content/CrudApi",
+      "RelativePath": "PictureArtist/030720240311.Teste.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PictureArtist\\030720240311.Teste.jpeg"
+    }
+  ]
 }

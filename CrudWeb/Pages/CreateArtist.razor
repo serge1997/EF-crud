@@ -29,6 +29,19 @@
             RequiredError="Field required"
         />
 
+        <MudImage Class="mt-4" Src="@filImage" />
+        <MudFileUpload T="IBrowserFile" Accept=".jpeg" FilesChanged="UploadImage">
+            <ButtonTemplate>
+                <MudButton HtmlTag="label"
+                    Variant="Variant.Filled"
+                    Color="Color.Primary"
+                    StartIcon="@Icons.Material.Filled.PhotoCamera"
+                    for="@context" >
+                Artist Picture
+                </MudButton>
+            </ButtonTemplate>
+        </MudFileUpload>
+
         <div class="d-flex align-center justify-space-between mt-4">
             <MudButton 
                 Variant="Variant.Filled"
@@ -45,11 +58,13 @@
 @code {
     private string? nome;
     private string? bio;
+    private string? filImage;
+    private string? picture;
 
 
     private async Task OnCreate()
     {
-        var request = new ArtistRequest(nome!, bio!);
+        var request = new ArtistRequest(nome!, bio!, picture);
         await ArtistApi.CreateArtistAsync(request);
         navigatorManager.NavigateTo("/artist");
     }
@@ -57,6 +72,21 @@
     private void BackToList()
     {
         navigatorManager.NavigateTo("/artist");
+    }
+
+    private async Task UploadImage(IBrowserFile file)
+    {
+        long maxFileSize = 1024 * 1024 * 15;
+        var format = "image/jpeg";
+        var resizedImage = await file.RequestImageFileAsync(format, 200, 200);
+
+        using var fileStream = resizedImage.OpenReadStream();
+        using var memoryStream = new MemoryStream();
+        await fileStream.CopyToAsync(memoryStream);
+
+        var imgConvert = Convert.ToBase64String(memoryStream.ToArray());
+        filImage = $"data:{format};base64,{imgConvert}";
+        picture = imgConvert;
     }
 
 }

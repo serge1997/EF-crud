@@ -14,11 +14,10 @@ public class Artists
     public int Id { get; set; }
     public ICollection<Musics> Music { get; set; } = new List<Musics>();
 
-    public Artists(string name, string bio, string? picture = null, string? birth = null, bool isActive = true)
+    public Artists(string name, string bio, string? birth = null, bool isActive = true)
     {
         this.Name = name;
         this.Bio = bio;
-        this.Picture = picture;
         Birth = birth;
         IsActive = isActive;
     }
