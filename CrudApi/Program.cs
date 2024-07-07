@@ -10,6 +10,7 @@ builder.Services.AddDbContext<CrudContext>();
 builder.Services.AddTransient<Generics<Artists>>();
 builder.Services.AddTransient<Generics<Musics>>();
 builder.Services.AddTransient<Generics<Generos>>();
+//builder.Services.AddTransient<Generics<GenerosMusics>>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

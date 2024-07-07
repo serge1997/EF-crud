@@ -8,12 +8,12 @@
 
 <MudPaper Class="px-8 pt-2 pb-4 mx-12 my-8" Justify="Justify.Center">
     <MudForm>
-        <MudSelect T="ArtistResponse" Variant="Variant.Outlined" Placeholder="Select artist" Class="mb-4" ValueChanged="OnSelectedArtist" Label="Artist">
+        <MudSelect T="ArtistResponse" ValueChanged="OnSelectedArtist" Variant="Variant.Outlined" Placeholder="Select artist" Class="mb-4" Label="Artist">
             @if(Artists is not null)
             {
                 @foreach(var artist in Artists)
                 {
-                    <MudSelectItem Value="artist">@artist.Name</MudSelectItem>
+                    <MudSelectItem Value="artist">@(artist.Name)</MudSelectItem>
                 }
             }
         </MudSelect>
@@ -36,12 +36,12 @@
             Placeholder="Artist name"
             @bind-Value="ArtistName" />
 
-        <MudSelect Variant="Variant.Outlined" ValueChanged="OnSelectedGenero" T="GeneroResponse" Placeholder="Select Genre" Class="mb-4" MultiSelection="true" Label="Genero" AnchorOrigin="Origin.BottomCenter">
+        <MudSelect Variant="Variant.Outlined" T="GeneroResponse" ValueChanged="OnSelectedGenero" Placeholder="Select Genre" Class="mb-4" Label="Genero" AnchorOrigin="Origin.BottomCenter">
             @if (Generos is not null)
             {
-                @foreach (var Generos in Generos)
+                @foreach (var genero in Generos)
                 {
-                    <MudSelectItem Value="Generos">@Generos.Name</MudSelectItem>
+                    <MudSelectItem Value="genero">@genero.Name</MudSelectItem>
                 }
             }
             @if (GeneroSelected is not null)
@@ -88,15 +88,19 @@
 
     private void OnSelectedGenero(GeneroResponse genero)
     {
-        GeneroSelected?.Add(genero);
+        if (!GeneroSelected!.Contains(genero))
+        {
+            GeneroSelected!.Add(genero);
+        }
+        
 
     }
 
     private async Task OnCreateMusic()
     {
-        ICollection<GeneroRequest> generos = GeneroSelected!.Select(gen => new GeneroRequest(gen.Name, gen.Description)).ToList();
+        ICollection<GeneroResponse> generos = GeneroSelected!.Select(gen => new GeneroResponse(gen.Id, gen.Name, gen.Description)).ToList();
 
-        var music = new MusicRequest(ArtistName!, MusicTitle!, "2024", 1,  generos);
+        var music = new MusicRequest(ArtistName!, MusicTitle!, "2024", ArtistSelected!.Id,  generos);
         await MusicApi.CreateMusicAsync(music);
     }
 }

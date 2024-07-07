@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "N9j9PF9Q5KWRmXFeDiRtpiclfmgyMx9F6/Uz7wtTW7g=",
+  "Hash": "uElwst1nk+oU1MWRv8IZQQ15fOYJHsDyZR1zsEENeK8=",
   "Source": "CrudApi",
   "BasePath": "_content/CrudApi",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\wwwroot\\PictureArtist\\030720240307.Woman Artist.jpeg",
+      "SourceId": "CrudApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\wwwroot\\",
+      "BasePath": "_content/CrudApi",
+      "RelativePath": "PictureArtist/030720240307.Woman Artist.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PictureArtist\\030720240307.Woman Artist.jpeg"
+    },
     {
       "Identity": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\wwwroot\\PictureArtist\\030720240311.Teste.jpeg",
       "SourceId": "CrudApi",

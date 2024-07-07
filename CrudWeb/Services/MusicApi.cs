@@ -14,6 +14,6 @@ public class MusicApi
 
     public async Task CreateMusicAsync(MusicRequest Request)
     {
-        await _httpClient.PostAsJsonAsync("music", Request);
+        await _httpClient.PostAsJsonAsync("musics", Request);
     }
 }

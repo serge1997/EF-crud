@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\wwwroot\\PictureArtist\\030720240307.Woman Artist.jpeg",
+      "PackagePath": "staticwebassets\\PictureArtist\\030720240307.Woman Artist.jpeg"
+    },
+    {
       "Id": "C:\\Users\\serge\\source\\repos\\crud\\CrudApi\\wwwroot\\PictureArtist\\030720240311.Teste.jpeg",
       "PackagePath": "staticwebassets\\PictureArtist\\030720240311.Teste.jpeg"
     },

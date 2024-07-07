@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "CrudWeb",
   "resources": {
-    "hash": "sha256-2/FKPvY5KpNXm79q+69kpkpspd2DmfGVsUimRFafM9A=",
+    "hash": "sha256-iMh89lwjeckjRX7Jh6PorvLPsnu7S0XQDJXEcLegnTs=",
     "jsModuleNative": {
       "dotnet.native.8.0.4.rkw194kvb3.js": "sha256-ju0+XWE0ihz554eKEj0HQ8Opa61xpbUIaX5/MNo8we4="
     },
@@ -215,10 +215,10 @@
       "mscorlib.wasm": "sha256-VCfYgt1mcjITabSTosCDVZ+68ea3Z7kakTFaLNLG+18=",
       "netstandard.wasm": "sha256-YOZxxR9PM3Dltcijfb0Q4FD39DkWZbZ1e2ScbZDvWJ4=",
       "System.Private.CoreLib.wasm": "sha256-NrT1QkAzVU//2wgK9vXdq77lCGvLJ4IOZ+Aegesyanc=",
-      "CrudWeb.wasm": "sha256-6T323j09nwKaFxplDz0pb9TdtqCZLStQ2NGJEfxdMO8="
+      "CrudWeb.wasm": "sha256-6ILkNKG2GQ1Yrrx+zX6R8NXkVDkNtFo2qbp05rMv60I="
     },
     "pdb": {
-      "CrudWeb.pdb": "sha256-k5Rfq3iuUsjUNk6vY7dwXR7lcroz0hM5sayu8UooBLg="
+      "CrudWeb.pdb": "sha256-Q6hGd5y9foG1h4wBVq+Y1F75SESffXYuYSKe14sXWbs="
     }
   },
   "cacheBootResources": true,

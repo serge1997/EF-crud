@@ -4,6 +4,7 @@ using Crud.Dao;
 using CrudApi.Requests;
 using CrudApi.Response;
 using CrudSharedModel.Models;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace CrudApi.Endpoint;
 
@@ -17,19 +18,10 @@ public static class MusicExtension
         {
             var NewMusic = new Musics(Request.Artist, Request.Title, Request.OutYear, Request.ArtistId)
             {
-                Generos = ConvertToGenero(Request.Generos)
+                Generos = ToGeneroEntiry(Request.Generos),
             };
-
-            Dictionary<string, string> GeneData = new();
-
-            foreach (var Gene in Request.Generos)
-            {
-                GeneData["Name"] = Gene.Name;
-                GeneData["Description"] = Gene.Description;
-            }
-
             Music.OnCreate(NewMusic);
-            Genero.OnCreate(new Generos(GeneData["Name"], GeneData["Description"]));
+            
             Results.Ok(NewMusic);
         });
 
@@ -54,5 +46,14 @@ public static class MusicExtension
         return Request.Select(req => new Generos(req.Name, req.Description)).ToList();
     }
 
+    public static ICollection<Generos> ToGeneroEntiry(ICollection<GeneroResponse> genero)
+    {
+        return genero.Select(s => new Generos(s.Name, s.Description)).ToList();
+    }
+
+    public static GeneroResponse ToGenero(Generos genero)
+    {
+        return new GeneroResponse(genero.Id, genero.Name, genero.Description);
+    }
     
 }

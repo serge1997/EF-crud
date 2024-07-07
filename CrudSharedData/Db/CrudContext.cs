@@ -10,6 +10,7 @@ public class CrudContext : DbContext
     public DbSet<Artists> Artists { get; set; }
     public DbSet<Musics> Musics { get; set; }
     public DbSet<Generos> Generos { get; set; }
+    //public DbSet<GenerosMusics> GenerosMusics {get; set;}
 
     private readonly string _ConnectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=soundsNew;Integrated Security=True;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
 
@@ -29,6 +30,8 @@ public class CrudContext : DbContext
         modelBuilder.Entity<Musics>()
             .HasMany(c => c.Generos)
             .WithMany(c => c.Musics);
+
+
 
         base.OnModelCreating(modelBuilder);
 
