@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CrudWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5535af0dc684ca3a01b1bce0b051a377ef08e74c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7404ad53dd6d3b9989629f9968d6cb5e7ed7b70")]
 [assembly: System.Reflection.AssemblyProductAttribute("CrudWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CrudWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

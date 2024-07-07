@@ -2,17 +2,18 @@
 
 @inject ArtistApi ArtistApi
 @inject GeneroApi GeneroApi
+@inject MusicApi MusicApi
 
 <h3>CreateMusic</h3>
 
 <MudPaper Class="px-8 pt-2 pb-4 mx-12 my-8" Justify="Justify.Center">
     <MudForm>
-        <MudSelect T="ArtistResponse" Variant="Variant.Outlined" Placeholder="Select artist" Class="mb-4" ValueChanged="OnSelectedArtist">
+        <MudSelect T="ArtistResponse" Variant="Variant.Outlined" Placeholder="Select artist" Class="mb-4" ValueChanged="OnSelectedArtist" Label="Artist">
             @if(Artists is not null)
             {
                 @foreach(var artist in Artists)
                 {
-                    <MudSelectItem Value="artist" />
+                    <MudSelectItem Value="artist">@artist.Name</MudSelectItem>
                 }
             }
         </MudSelect>
@@ -24,23 +25,30 @@
             Variant="Variant.Outlined"
             RequiredError="Filed is required"
             Class="mb-3"
-            Placeholder="Music title" 
-        />
+            Placeholder="Music title"
+            @bind-Value="MusicTitle" />
 
-        <MudSelect Variant="Variant.Outlined" T="GeneroResponse" Placeholder="Select Genre" Class="mb-4" MultiSelection="true" ValueChanged="OnSelectedGenero" Label="Genero">
+        <MudTextField T="string"
+            Required="true"
+            Variant="Variant.Outlined"
+            RequiredError="Filed is required"
+            Class="mb-3"
+            Placeholder="Artist name"
+            @bind-Value="ArtistName" />
+
+        <MudSelect Variant="Variant.Outlined" ValueChanged="OnSelectedGenero" T="GeneroResponse" Placeholder="Select Genre" Class="mb-4" MultiSelection="true" Label="Genero" AnchorOrigin="Origin.BottomCenter">
             @if (Generos is not null)
             {
-                @foreach (var genre in Generos)
+                @foreach (var Generos in Generos)
                 {
-                    <MudSelectItem Value="genre"/>
+                    <MudSelectItem Value="Generos">@Generos.Name</MudSelectItem>
                 }
-
-                @if(GeneroSelected is not null)
+            }
+            @if (GeneroSelected is not null)
+            {
+                @foreach (var item in GeneroSelected)
                 {
-                    @foreach(var item in GeneroSelected)
-                    {
-                        <MudAlert Severity="Severity.Info">@(item.Name) added</MudAlert>
-                    }
+                    <MudAlert Severity="Severity.Info">@(item.Name) added</MudAlert>
                 }
             }
         </MudSelect>
@@ -48,6 +56,7 @@
             Class="mt-3"
             Color="Color.Primary"
             Variant="Variant.Filled"
+            OnClick="OnCreateMusic"
         >
             Create musics
         </MudButton>
@@ -57,8 +66,10 @@
 @code {
     private ICollection<ArtistResponse>? Artists;
     private ICollection<GeneroResponse>? Generos;
+    private string? ArtistName { get; set; }
+    private string? MusicTitle { get; set; }
 
-    private List<GeneroResponse>? GeneroSelected { get; set; }
+    private List<GeneroResponse>? GeneroSelected { get; set; } = new();
     private ArtistResponse? ArtistSelected { get; set; }
 
 
@@ -66,15 +77,26 @@
     {
         Artists = await ArtistApi.GetArtistApiAsync();
         Generos = await GeneroApi.GetGenerosAsync();
+        //GeneroSelected?.Add(new GeneroResponse(1, "Pop", "Pop"));
     }
 
     private void OnSelectedArtist(ArtistResponse artist)
     {
         ArtistSelected = artist;
+
     }
 
     private void OnSelectedGenero(GeneroResponse genero)
     {
         GeneroSelected?.Add(genero);
+
+    }
+
+    private async Task OnCreateMusic()
+    {
+        ICollection<GeneroRequest> generos = GeneroSelected!.Select(gen => new GeneroRequest(gen.Name, gen.Description)).ToList();
+
+        var music = new MusicRequest(ArtistName!, MusicTitle!, "2024", 1,  generos);
+        await MusicApi.CreateMusicAsync(music);
     }
 }
